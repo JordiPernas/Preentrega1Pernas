@@ -1,34 +1,37 @@
-function creditoPersonal() {
-    const nombre = prompt("Bienvenido! ¿Cuál es tu nombre?: ");
-    const apellido = prompt("¿Cuál es tu apellido?: ");
-    const monto = prompt("¿Cuánto dinero solicitas?: ");
-  
-    if (monto <= 0) {
-        alert("El monto debe ser un número mayor a 0.");
-        return;
-    }
+let respuesta = "si";
 
-    const plazo = prompt("Ingresa la cantidad de cuotas que deseas: 6, 12, 18 o 24");
+while (respuesta == "si" || respuesta == "sí") {
 
-    if (plazo <= 0) {
-        alert("La cantidad de cuotas debe ser un número mayor a 0.");
-        return;
-    } else if (plazo > 24) {
-        alert("La cantidad de cuotas no debe ser mayor a 24.");
-        return;
-    } if ( (plazo <= 5 ) && ( plazo >= 11 ) && ( plazo <= 17 ) && ( plazo >=23 ) ) {
-        alert("La cantidad de cuotas tiene que ser 6, 12, 18 o 24.");
-        return;
-    }
+let nombre = prompt("Bienvenido! ¿Cuál es tu nombre?: ");
+let apellido = prompt("¿Cuál es tu apellido?: ");
+let plata = prompt("¿Cuánto dinero solicitas?: ");
+const monto = ((plata <= 0) && (plata >1000000));
 
-    const cuota = monto / plazo;
+if (plata <= 0){
+    alert("El monto debe ser un número mayor a 0.");
+    break;
+    
+} else if (plata >1000000) {
+    alert("Tu monto no puede superar los $1000000.");
+    break;
+} 
 
-    alert(`Solicitud de crédito personal de: ${monto} pesos
-  
-  A nombre de: ${nombre} ${apellido}
-  
-  Cuota mensual: ${cuota} pesos
-  
-  Plazo elegido: ${plazo} cuotas`);
+
+let cuota = parseInt(prompt("Ingresa la cantidad de cuotas que deseas: 6, 12, 18 o 24"));
+if (cuota < 0 || cuota > 24) {
+    alert("Hacemos créditos con hasta 24 cuotas");
+    break;
+  } else {
+        
+    alert("El número de cuotas seleccionado es: " + cuota);
+}
+
+function calcularPrestamo(a, b) {
+    return((a / b)*1.18);
   }
-  creditoPersonal();
+let resultado = calcularPrestamo (plata, cuota);
+    alert(nombre + " " + apellido + " le comentamos que el resultado de su prestamo serian " + resultado + " al mes.");
+
+  
+    respuesta = prompt("¿Quieres calcular otra vez? (si/no)");
+}
