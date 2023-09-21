@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+  }
+  
+
+  .titulo-principal {
+    text-align: left;
+    color: green;
+    font-size: 50px;
+  }
+  
+  .titulos {
+    font-size: 40px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border: 3px solid rgb(26, 102, 16);
+  }
+
+  .titulo-footer {
+    font-size: 30px;
+  }
+  
+  header {
+    background-color: black;
+    text-align: center;
+    height: auto;
+  }
+  
+  .navegador {
+    border-top: 10px solid rgb(26, 102, 16);
+    border-bottom: 10px solid rgb(26, 102, 16);
+    text-align: right;
+  }
+  .navegador ul {
+    display: flex;
+    justify-content: end;
+    list-style-type: none;
+    z-index: 10;
+  }
+  .navegador ul li a {
+    text-decoration: none;
+    list-style: none;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0px 10px 30px 0px;
+    display: block;
+    padding: 10px 20px;
+  }
+  
+  .navunido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .navegador .menu {
+    display: none;
+  }
+  
+  .linea1 {
+    background-color: green;
+    height: 7px;
+  }
+  
+  .marcas {
+    background-color: black;
+    text-align: center;
+    color: white;
+  }
+  
+  #keller {
+    font-size: 40px;
+    margin-top: 150px;
+    text-align: center;
+  }
+  
+  #honda {
+    font-size: 40px;
+    margin-top: 150px;
+    text-align: center;
+  }
+  
+  #yamaha {
+    font-size: 40px;
+    margin-top: 150px;
+    text-align: center;
+  }
+  
+  #bajaj {
+    font-size: 40px;
+    margin-top: 150px;
+    text-align: center;
+  }
+  
+  #motomel {
+    font-size: 40px;
+    margin-top: 150px;
+    text-align: center;
+  }
+  
+  #kawasaki {
+    font-size: 40px;
+    margin-top: 150px;
+    text-align: center;
+  }
+  
+  #gilera {
+    font-size: 40px;
+    margin-top: 150px;
+    text-align: center;
+  }
+  
+  #benelli {
+    font-size: 40px;
+    margin-top: 150px;
+    text-align: center;
+  }
+  
+  #corven {
+    font-size: 40px;
+    margin-top: 150px;
+    text-align: center;
+  }
+  
+  #zanella {
+    font-size: 40px;
+    margin-top: 150px;
+    text-align: center;
+  }
+
+  .carousel-item img {
+    height: 720px;
+    object-fit: cover;
+  }
+  
+  #carouselExampleIndicators {
+    width: 100%;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: green;
+    border: 5px solid black;
+    font-weight: bolder;
+  }
+  
+  .cotizaciones {
+    display: flex;
+    border: 3px solid black;
+    width: 300px;
+    background-color: green;
+    margin: 5px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 25px;
+    color: white;
+  }
+  .cotizaciones h5 {
+    color: black;
+    font-weight: bolder;
+  }
+  
+  .form-credito {
+    display: flex;
+    border: 3px solid black;
+    width: 300px;
+    margin: 5px;
+    padding: 5px;
+    background-color: green;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .form-credito .boton-credito {
+    border-radius: 5px;
+    font-size: 17px;
+    width: 100px;
+    background-color: white;
+    color: black;
+    border: 35px;
+  }
+  
+  .texto-footer {
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  
+  .redes-footer {
+    border: 3px solid black;
+    width: 300px;
+    margin: 5px;
+    background-color: green;
+    text-align: center;
+  }
+  .redes-footer .fa-brands {
+    font-size: 20px;
+    text-align: center;
+  }
+  .redes-footer .descripcion-footer {
+    text-align: center;
+    font-size: 25px;
+  }
+  
